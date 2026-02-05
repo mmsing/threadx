@@ -84,8 +84,10 @@ typedef int                                     INT;
 typedef unsigned int                            UINT;
 typedef long                                    LONG;
 typedef unsigned long                           ULONG;
+typedef unsigned long long                      ULONG64;
 typedef short                                   SHORT;
 typedef unsigned short                          USHORT;
+#define ULONG64_DEFINED
 
 
 /* Define interrupt control options.  */
