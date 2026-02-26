@@ -228,6 +228,8 @@ UINT    status;
         /* Send message to queue 0.  */
         status =  tx_queue_send(&queue_0, &thread_1_messages_sent, TX_WAIT_FOREVER);
 
+        tx_thread_sleep(2);
+
         /* Check completion status.  */
         if (status != TX_SUCCESS) {
             puts("[Thread 1] ERROR: Failed to send message!");
@@ -256,6 +258,8 @@ UINT    status;
 
         /* Retrieve a message from the queue.  */
         status = tx_queue_receive(&queue_0, &received_message, TX_WAIT_FOREVER);
+
+        tx_thread_sleep(2);
 
         /* Check completion status and make sure the message is what we
            expected.  */

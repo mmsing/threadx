@@ -7,10 +7,13 @@
 
 Prerequisites
 - Install a RISC-V32 bare-metal Clang toolchain
-- Install a RISC-V32 bare-metal GNU toolchain with riscv32-unknown-elf prefix
-- Common source: https://github.com/riscv-collab/riscv-gnu-toolchain
+- Install a RISC-V32 bare-metal GNU toolchain with riscv32-unknown-elf prefix.
+  Common source: https://github.com/riscv-collab/riscv-gnu-toolchain
 
-Verify the Clang toolchaing:
+The GNU toolchain is needed because the Clang toolchain does not include some
+standard headers and libraries, i.e. "string.h".
+
+Verify the Clang toolchain:
   clang --version
 
 Verify the GCC toolchain:
@@ -20,6 +23,9 @@ Verify the GCC toolchain:
 CMake-based build (recommended)
 
 From the ThreadX top-level directory:
+
+  Set environment variable "GCC_INSTALL_PREFIX" with the location of the 
+  GNU toolchain, i.e., export GCC_INSTALL_PREFIX=/opt/riscv_rv32ima
 
   cmake -Bbuild -GNinja -DCMAKE_TOOLCHAIN_FILE=cmake/riscv32_clang.cmake .
   cmake --build ./build/
