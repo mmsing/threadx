@@ -1,5 +1,5 @@
 /***************************************************************************
- * Copyright (c) 2026 Quintauris 
+ * Copyright (c) 2026 Quintauris
  *
  * This program and the accompanying materials are made available under the
  * terms of the MIT License which is available at
@@ -53,12 +53,6 @@
 /*  CALLED BY                                                             */
 /*                                                                        */
 /*    _tx_thread_create                     Create thread service         */
-/*                                                                        */
-/*  RELEASE HISTORY                                                       */
-/*                                                                        */
-/*    DATE              NAME                      DESCRIPTION             */
-/*                                                                        */
-/*  26-02-2026      Francisco Merino            Initial Version 6.4.x     */
 /*                                                                        */
 /**************************************************************************/
 /* VOID   _tx_thread_stack_build(TX_THREAD *thread_ptr, VOID (*function_ptr)(VOID))

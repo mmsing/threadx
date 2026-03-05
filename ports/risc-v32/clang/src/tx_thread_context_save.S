@@ -52,12 +52,6 @@
 /*                                                                        */
 /*    ISRs                                                                */
 /*                                                                        */
-/*  RELEASE HISTORY                                                       */
-/*                                                                        */
-/*    DATE              NAME                      DESCRIPTION             */
-/*                                                                        */
-/*  26-02-2026      Francisco Merino            Initial Version 6.4.x     */
-/*                                                                        */
 /**************************************************************************/
 /* VOID   _tx_thread_context_save(VOID)
 {  */

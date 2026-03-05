@@ -1,5 +1,5 @@
 /***************************************************************************
- * Copyright (c) 2026 Quintauris 
+ * Copyright (c) 2026 Quintauris
  *
  * This program and the accompanying materials are made available under the
  * terms of the MIT License which is available at
@@ -58,12 +58,6 @@ __tx_free_memory_start:
 /*  CALLED BY                                                             */
 /*                                                                        */
 /*    _tx_initialize_kernel_enter           ThreadX entry function        */
-/*                                                                        */
-/*  RELEASE HISTORY                                                       */
-/*                                                                        */
-/*    DATE              NAME                      DESCRIPTION             */
-/*                                                                        */
-/*  26-02-2026      Francisco Merino            Initial Version 6.4.x     */
 /*                                                                        */
 /**************************************************************************/
 /* VOID   _tx_initialize_low_level(VOID)

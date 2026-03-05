@@ -1,11 +1,11 @@
 
 /***************************************************************************
- * Copyright (c) 2024 Microsoft Corporation 
- * 
+ * Copyright (c) 2024 Microsoft Corporation
+ *
  * This program and the accompanying materials are made available under the
  * terms of the MIT License which is available at
  * https://opensource.org/licenses/MIT.
- * 
+ *
  * SPDX-License-Identifier: MIT
  **************************************************************************/
 
@@ -29,18 +29,6 @@
 /*    directly use native C data types.  Instead, ThreadX creates its     */
 /*    own special types that can be mapped to actual data types by this   */
 /*    file to guarantee consistency in the interface and functionality.   */
-/*                                                                        */
-/*  RELEASE HISTORY                                                       */
-/*                                                                        */
-/*    DATE              NAME                      DESCRIPTION             */
-/*                                                                        */
-/*  11-09-2020      Cadence Design Systems  Initial Version 6.1.2         */
-/*  04-02-2021      Bhupendra Naphade       Modified comment(s), updated  */
-/*                                            macro definition,           */
-/*                                            resulting in version 6.1.6  */
-/*  10-31-2022      Scott Larson            Modified comment(s), removed  */
-/*                                            EPK extension,              */
-/*                                            resulting in version 6.2.0  */
 /*                                                                        */
 /**************************************************************************/
 
@@ -470,7 +458,7 @@ extern int xt_timer_intnum;
 
 #ifdef TX_THREAD_INIT
 CHAR                            _tx_version_id[] =
-                                    "Copyright (c) 2024 Microsoft Corporation. * Azure RTOS Xtensa Version 6.4.2 *";
+                                    "(c) 2024 Microsoft Corp. (c) 2026-present Eclipse ThreadX contributors. * Azure RTOS Xtensa Version 6.5.0.202601 *";
 #else
 extern  CHAR                    _tx_version_id[];
 #endif
